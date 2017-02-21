@@ -10,12 +10,17 @@ package scrabble;
  * @author TOSHIBA P55
  */
 public class Scrabble {
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+         { 
+            
+         Inicial vent= new Inicial();
+        vent.setVisible(true);
         // TODO code application logic here
     }
+    
+}
     
 }
