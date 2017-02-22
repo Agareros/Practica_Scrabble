@@ -15,7 +15,7 @@ import scrabble.xml;
  */
 public class Inicial extends javax.swing.JFrame {
 private FileNameExtensionFilter filtro = new FileNameExtensionFilter("Archivos XML","xml");
-    private cargarXml xml = new cargarXml();
+    private xml xml = new xml();
     /**
      * Creates new form Inicial
      */
@@ -79,7 +79,7 @@ private FileNameExtensionFilter filtro = new FileNameExtensionFilter("Archivos X
         int opcion = escojer.showOpenDialog(this);
         if(opcion== JFileChooser.APPROVE_OPTION){
             ruta = escojer.getSelectedFile().getPath();
-            if(xml.cargarXml(ruta)){
+            if(xml.leerElXml(ruta)){
                 System.out.println("LECTURA DE XML EXITOSA");
                             }
         }

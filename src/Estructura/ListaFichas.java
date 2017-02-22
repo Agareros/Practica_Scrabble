@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Estructura;
-import ObjetosJuego.Ficha;
+import scrabble.Ficha;
 /**
  *
  * @author TOSHIBA P55

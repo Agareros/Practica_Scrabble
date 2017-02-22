@@ -9,7 +9,7 @@ import Estructura.ListaFichas;
  *
  * @author TOSHIBA P55
  */
-public class Jugador {
+public class Jugadores {
     
     //Atributos JUGADOR
     private String N_Usuario;
@@ -17,7 +17,7 @@ public class Jugador {
     //FIN ATRIBUTOS
     
     //Constructor
-    public Jugador(String Nombre, ListaFichas fichasPl){
+    public Jugadores(String Nombre, ListaFichas fichasPl){
         this.N_Usuario = Nombre;
         this.fichasDeJugador = fichasPl;
     }

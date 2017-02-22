@@ -2,17 +2,14 @@
 package scrabble;
 import java.io.File;
 
-import Estructura.Lista;
-import java.io.IOException;
-import java.util.List;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.input.SAXBuilder;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import java.io.File;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.xml.sax.*;
+import org.w3c.dom.*;
+import javax.xml.parsers.*;
+
+import javax.swing.JOptionPane;
 import Estructura.*;
 /**
  *
