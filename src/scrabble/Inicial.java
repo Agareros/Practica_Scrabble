@@ -5,12 +5,17 @@
  */
 package scrabble;
 
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import scrabble.xml;
+
 /**
  *
  * @author TOSHIBA P55
  */
 public class Inicial extends javax.swing.JFrame {
-
+private FileNameExtensionFilter filtro = new FileNameExtensionFilter("Archivos XML","xml");
+    private cargarXml xml = new cargarXml();
     /**
      * Creates new form Inicial
      */
@@ -68,8 +73,16 @@ public class Inicial extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
        
-        xml cargar = new xml();
-        cargar.cargarXml();
+        String ruta = "";
+        JFileChooser escojer = new JFileChooser();
+        escojer.setFileFilter(filtro);
+        int opcion = escojer.showOpenDialog(this);
+        if(opcion== JFileChooser.APPROVE_OPTION){
+            ruta = escojer.getSelectedFile().getPath();
+            if(xml.cargarXml(ruta)){
+                System.out.println("LECTURA DE XML EXITOSA");
+                            }
+        }
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
